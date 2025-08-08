@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #0077e8;
+    --you-chan: #66c0ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.you-chan_image {
+    height: 75vh;
+    background-image: url("/src/images/background_you-chan.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: var(--primary-color);
+}
+
+.navbar .you-chan_logo .logo img {
+    width: 65px;
+}
+
+.navbar .navbar_item li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navbar .navbar_item li .you-chan_home, .you-chan_photo, .you-chan_clothes {
+    color: black;
+    font-family: "Berlin Sans FB", monospace ;
+    text-decoration: none;
+}
+
+.you-chan_title {
+    text-align: center;
+    color: var(--you-chan);
+    margin-top: 35px;
+}
