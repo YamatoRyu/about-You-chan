@@ -70,3 +70,19 @@
     color: var(--you-chan);
     margin-top: 35px;
 }
+
+.about {
+    margin-top: 50px;
+}
+
+.about p {
+    font-size: 18px;
+    font-family: "Baskerville Old Face", cursive;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.statistics {
+    text-align: center;
+    padding: 20px;
+}
