@@ -31,17 +31,19 @@
 .navbar .navbar_item li {
     display: inline-block;
     list-style: none;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 .navbar .navbar_item li .you-chan_home, .you-chan_photo, .you-chan_clothes {
     color: black;
+    padding: 20px;
     font-family: "Berlin Sans FB", monospace ;
     text-decoration: none;
     transition: 0.5s;
 }
 
 .navbar .navbar_item li .you-chan_home:hover, .you-chan_photo:hover, .you-chan_clothes:hover {
+    background-color: #0066bf;
     color: var(--you-chan);
     transition: 0.5s;
 }
