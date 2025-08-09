@@ -38,6 +38,31 @@
     color: black;
     font-family: "Berlin Sans FB", monospace ;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar .navbar_item li .you-chan_home:hover, .you-chan_photo:hover, .you-chan_clothes:hover {
+    color: var(--you-chan);
+    transition: 0.5s;
+}
+
+.navbar .menu_bar {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+}
+
+.navbar .menu_bar:hover {
+    border: 1px solid snow;
+    background-color: #015bae;
+    transition: 0.5s;
+}
+
+.navbar .menu_bar .menu {
+    color: snow;
 }
 
 .you-chan_title {

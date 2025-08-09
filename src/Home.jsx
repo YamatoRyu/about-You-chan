@@ -1,9 +1,17 @@
 import './css/Home.css'
 
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { Menu } from 'react-feather'
+
 import Logo from './images/Logo.png'
+import feather from 'feather-icons'
 
 function Home() {
+    useEffect(() => {
+        feather.replace();
+    }, [])
+
     return (
         <>
             <div className="you-chan_image"></div>
@@ -28,9 +36,13 @@ function Home() {
                         <Link to="/clothes" className="you-chan_clothes">Clothes</Link>
                     </li>
                 </div>
+
+                <button className="menu_bar">
+                    <Menu className="menu" />
+                </button>
             </nav>
 
-            <h1 className="you-chan_title">Watanabe You-chan (渡辺 曜)</h1>
+            <h1 className="you-chan_title">Watanabe You (渡辺 曜)</h1>
         </>
     );
 }
