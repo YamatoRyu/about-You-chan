@@ -1,11 +1,13 @@
-import './css/Home.css'
+import './css/Home.css';
 
 import { Link } from "react-router-dom";
-import React, { useEffect } from 'react'
-import { Menu } from 'react-feather'
+import React, { useEffect } from 'react';
+import { Menu } from 'react-feather';
 
-import Logo from './images/Logo.png'
-import feather from 'feather-icons'
+import Logo from './images/Logo.png';
+import WatanabeYou from './images/you-chan_Summer.png';
+
+import feather from 'feather-icons';
 
 function Home() {
     useEffect(() => {
@@ -14,7 +16,11 @@ function Home() {
 
     return (
         <>
-            <div className="you-chan_image"></div>
+            <div className="you-chan_image">
+                <button className="menu_bar">
+                    <Menu className="menu" />
+                </button>
+            </div>
 
             <nav className="navbar">
                 <div className="you-chan_logo">
@@ -36,10 +42,6 @@ function Home() {
                         <Link to="/clothes" className="you-chan_clothes">Clothes</Link>
                     </li>
                 </div>
-
-                <button className="menu_bar">
-                    <Menu className="menu" />
-                </button>
             </nav>
 
             <h1 className="you-chan_title">Watanabe You (渡辺 曜)</h1>
@@ -61,7 +63,23 @@ function Home() {
 
             <h2 className="statistics">Statistics</h2>
 
-            <div className="school_name">
+            <div className="you-chan_statistics">
+                <div className="text_statistics">
+                    <div className="school_name">
+                        <p>School Name</p>
+                        <p>Uranohoshi Girls' High School</p>
+                    </div>
+
+                    <div className="school_years">
+                        <p>School Years</p>
+                        <p>2nd year</p>
+                    </div>
+                </div>
+
+                <div className="image_statistics">
+                    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                    <img src={WatanabeYou} alt={'You-chan Image'} className="you-chan" />
+                </div>
             </div>
         </>
     );

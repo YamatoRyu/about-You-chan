@@ -6,6 +6,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .you-chan_image {
@@ -38,7 +45,6 @@
     color: black;
     padding: 20px;
     font-family: "Berlin Sans FB", monospace ;
-    text-decoration: none;
     transition: 0.5s;
 }
 
@@ -48,22 +54,25 @@
     transition: 0.5s;
 }
 
-.navbar .menu_bar {
-    background-color: var(--primary-color);
+.menu_bar {
     border: none;
-    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    padding: 20px;
     text-align: center;
     transition: 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
     display: none;
 }
 
-.navbar .menu_bar:hover {
-    border: 1px solid snow;
+.menu_bar:hover {
+    border: none;
     background-color: #015bae;
     transition: 0.5s;
 }
 
-.navbar .menu_bar .menu {
+.menu_bar .menu {
     color: snow;
 }
 
@@ -87,4 +96,41 @@
 .statistics {
     text-align: center;
     padding: 20px;
+}
+
+.you-chan_statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.you-chan_statistics .text_statistics .school_name, .school_years {
+    display: flex;
+    justify-content: space-between;
+}
+
+.you-chan_statistics .text_statistics .school_name p {
+}
+
+.you-chan_statistics .image_statistics .you-chan {
+    width: 35vh;
+    pointer-events: none;
+    background-color: snow;
+    border-radius: 55px;
+}
+
+.you-chan_statistics p {
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+@media (max-width: 800px) {
+    .menu_bar {
+        display: inline-block;
+        text-align: right;
+        margin-left: 20px;
+    }
 }
