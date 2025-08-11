@@ -5,7 +5,6 @@ import React, { useEffect } from 'react';
 import { Menu } from 'react-feather';
 
 import Logo from './images/Logo.png';
-import WatanabeYou from './images/you-chan_Summer.png';
 
 import feather from 'feather-icons';
 
@@ -63,22 +62,59 @@ function Home() {
 
             <h2 className="statistics">Statistics</h2>
 
-            <div className="you-chan_statistics">
-                <div className="text_statistics">
-                    <div className="school_name">
-                        <p>School Name</p>
-                        <p>Uranohoshi Girls' High School</p>
-                    </div>
+            <div className="you-chan_static">
+                <hr className="statistics_line" />
 
-                    <div className="school_years">
-                        <p>School Years</p>
-                        <p>2nd year</p>
-                    </div>
+                <div className="school_name">
+                    <p style={{color: '#0077e8'}}>School</p>
+                    <p>Uranohoshi Girls' High School</p>
                 </div>
 
-                <div className="image_statistics">
-                    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                    <img src={WatanabeYou} alt={'You-chan Image'} className="you-chan" />
+                <hr className="statistics_line" />
+
+                <div className="school_years">
+                    <p style={{color: '#0077e8'}}>School Years</p>
+                    <p>2nd years</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="birthday">
+                    <p style={{color: '#0077e8'}}>Birthday</p>
+                    <p>April 17</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="astrological_sign">
+                    <p style={{color: '#0077e8'}}>Astrological sign</p>
+                    <p>Aries</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="blood_type">
+                    <p style={{color: '#0077e8'}}>Blood Type</p>
+                    <p>AB</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="height">
+                    <p style={{color: '#0077e8'}}>Height</p>
+                    <p>1m 57cm</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="measurements">
+                    <p style={{color: '#0077e8'}}>Measurements</p>
+
+                    <div className="measurements_text">
+                        <p><span style={{color: 'aqua'}}>Bust</span> 82cm</p>
+                        <p><span style={{color: "aqua"}}>Waist</span> 57cm</p>
+                        <p><span style={{color: "aqua"}}>Hips</span> 81cm</p>
+                    </div>
                 </div>
             </div>
         </>

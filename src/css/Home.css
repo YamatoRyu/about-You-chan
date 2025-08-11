@@ -98,33 +98,30 @@ body {
     padding: 20px;
 }
 
-.you-chan_statistics {
+.you-chan_static {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.you-chan_static .statistics_line {
+    margin: 25px 30px 20px;
+}
+
+.you-chan_static p {
+    font-size: 20px;
+    font-family: "Times New Roman", cursive;
+}
+
+.you-chan_static .school_name, .school_years, .birthday, .astrological_sign, .blood_type, .height, .measurements {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.you-chan_statistics .text_statistics .school_name, .school_years {
-    display: flex;
-    justify-content: space-between;
-}
-
-.you-chan_statistics .text_statistics .school_name p {
-}
-
-.you-chan_statistics .image_statistics .you-chan {
-    width: 35vh;
-    pointer-events: none;
-    background-color: snow;
-    border-radius: 55px;
-}
-
-.you-chan_statistics p {
-    font-size: 15px;
-    font-family: "Times New Roman", Times, serif;
+.you-chan_static .measurements .measurements_text p {
+    margin: 10px;
 }
 
 @media (max-width: 800px) {
