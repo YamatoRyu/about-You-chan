@@ -17,7 +17,7 @@ body {
 
 .you-chan_image {
     height: 75vh;
-    background-image: url("/src/images/background_you-chan.png");
+    background-image: url("/src/images/You-chan_background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,7 +112,8 @@ body {
     font-family: "Times New Roman", cursive;
 }
 
-.you-chan_static .school_name, .school_years, .birthday, .astrological_sign, .blood_type, .height, .measurements {
+.you-chan_static .school_name, .school_years, .birthday, .astrological_sign, .blood_type, .height, .measurements, .signature,
+.skills, .hobbies, .like_food, .dislike_food {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,6 +123,13 @@ body {
 
 .you-chan_static .measurements .measurements_text p {
     margin: 10px;
+}
+
+.description .idol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
 }
 
 @media (max-width: 800px) {

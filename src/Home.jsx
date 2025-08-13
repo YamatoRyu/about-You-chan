@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import React, { useEffect } from 'react';
 import { Menu } from 'react-feather';
 
-import Logo from './images/Logo.png';
+import Idol from './images/You-chan_idol.png'
+import Logo from './images/logo.png';
+import SignIn from './images/sign.png'
 
 import feather from 'feather-icons';
 
@@ -116,9 +118,61 @@ function Home() {
                         <p><span style={{color: "aqua"}}>Hips</span> 81cm</p>
                     </div>
                 </div>
+
+                <hr className="statistics_line" />
+
+                <div className="signature">
+                    <p style={{color: '#0077e8'}}>Signature</p>
+
+                    <img style={{width: '28%'}} src={SignIn} alt="You-chan SignIn logo" />
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="skills">
+                    <p style={{color: '#0077e8'}}>Skills</p>
+                    <p>High Diving</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="hobbies">
+                    <p style={{color: '#0077e8'}}>Hobbies</p>
+                    <p>Weight Training, Running, Uniforms</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="like_food">
+                    <p style={{color: '#0077e8'}}>Like Food</p>
+                    <p>Salisbury Steak, Oranges</p>
+                </div>
+
+                <hr className="statistics_line" />
+
+                <div className="dislike_food">
+                    <p style={{color: '#0077e8'}}>Dislike Food</p>
+                    <p>Sashimi, Anything too dry</p>
+                </div>
             </div>
+
+            <hr style={{marginTop: '50px', marginBottom: '20px'}} />
+
+            <Description />
         </>
     );
+}
+
+function Description() {
+    return (
+        <div className="description">
+            <div className="idol">
+                <img src={Idol} alt="You-chan idol style" style={{width: '45%'}} />
+            </div>
+
+            <p></p>
+        </div>
+    )
 }
 
 export default Home;
