@@ -170,7 +170,8 @@ function Description() {
                 <img src={Idol} alt="You-chan idol style" style={{width: '45%'}} />
             </div>
 
-            <p></p>
+            <p className="description_text">
+            </p>
         </div>
     )
 }
