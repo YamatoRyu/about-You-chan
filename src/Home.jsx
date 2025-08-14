@@ -185,6 +185,8 @@ function Description() {
                 Aqours is gonna level up on this new stage, too. <br/>
                 To that end, it’d be swell if you cheered us on!♪
             </p>
+
+            <div></div>
         </div>
     )
 }
