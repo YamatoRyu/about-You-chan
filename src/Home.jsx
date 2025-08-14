@@ -171,6 +171,19 @@ function Description() {
             </div>
 
             <p className="description_text">
+                Aye aye! Full speed ahead!! Hey there, this is Watanabe You!♪ Whoops, maybe I surprised you <br/>
+                with the sudden loud voice. Sorry about that. <br/>
+                Ah, “aye aye” is sailing lingo. I really like ships, so it kinda comes out whenever I get excited~. <br/>
+                Yeah! I heard a new stage was about to begin, and I’ve been super excited since morning~! <br/>
+                I couldn’t contain it, and before I knew it I dove into the sea!☆ <br/>
+                Ehehe, it felt great!♪ <br/>
+                Being invited by Chika and becoming a school idol, learning songs and dances, it all felt like an <br/>
+                unknown world, but after starting, it was just so fun… <br/>
+                Hehe, and I’ve gotten to the point where I can make our costumes! <br/>
+                Pulling off lots of live shows, delivering our music to so many people, and now from here… <br/>
+                I think we are gonna continue to grow even more. <br/>
+                Aqours is gonna level up on this new stage, too. <br/>
+                To that end, it’d be swell if you cheered us on!♪
             </p>
         </div>
     )

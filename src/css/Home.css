@@ -1,5 +1,6 @@
 :root {
     --primary-color: #0077e8;
+    --secondary-color: rgba(176, 232, 245, 0.95);
     --you-chan: #66c0ff;
 }
 
@@ -130,6 +131,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 45px;
+}
+
+.description .description_text {
+    font-size: 20px;
+    font-family: "Times New Roman", cursive;
+    margin: 0 100px 15px;
+    padding: 90px 50px 90px;
+    background-color: var(--secondary-color);
 }
 
 @media (max-width: 800px) {
