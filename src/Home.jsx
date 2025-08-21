@@ -1,12 +1,13 @@
 import './css/Home.css';
 
 import { Link } from "react-router-dom";
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { Menu } from 'react-feather';
 
 import Idol from './images/You-chan_idol.png'
 import Logo from './images/logo.png';
-import SignIn from './images/sign.png'
+import SignIn from './images/sign.png';
+import Introduction from './audio/You-chan_introduction.ogg'
 
 import feather from 'feather-icons';
 
@@ -163,6 +164,29 @@ function Home() {
     );
 }
 
+const IntroductionSelfAudio = () => {
+    const audioRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const tooglePlay = () => {
+        if (isPlaying) {
+            audioRef.current.pause();
+            setIsPlaying(false);
+        }
+        else {
+            audioRef.current.play();
+            setIsPlaying(true);
+        }
+    };
+
+    return (
+        <div className="description_audio">
+            <audio ref={audioRef} src={Introduction} onEnded={() => setIsPlaying(false)} />
+            <button onClick={tooglePlay}>{ isPlaying ? 'Pause' : 'Play' }</button>
+        </div>
+    )
+}
+
 function Description() {
     return (
         <div className="description">
@@ -186,8 +210,7 @@ function Description() {
                 To that end, it’d be swell if you cheered us on!♪
             </p>
 
-            <div className="description_audio">
-            </div>
+            <IntroductionSelfAudio />
         </div>
     )
 }
