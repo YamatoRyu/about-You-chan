@@ -18,7 +18,7 @@ body {
 
 .you-chan_image {
     height: 75vh;
-    background-image: url("/src/images/You-chan_background.png");
+    background-image: url("/src/images/You-chan_about_background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

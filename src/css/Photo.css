@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.you-chan_image_clothes {
+    height: 75vh;
+    background-image: url("/src/images/You-chan_photo_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
